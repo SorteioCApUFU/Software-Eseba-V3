@@ -124,15 +124,19 @@ Cada linha representa um candidato (ou dupla/grupo de gêmeos) e deve conter as 
 
 4. **Remanejamento de Vagas Ociosas:** Caso uma modalidade não possua candidatos suficientes para preencher suas vagas imediatas, o sistema redistribui automaticamente as vagas remanescentes seguindo a cascata:
 
-   * `M2` $\rightarrow$ `M3` $\rightarrow$ `M7`
+    * `M1` $\rightarrow$ `Ampla Concorrência (AC)`
+      
+    * `M2` $\rightarrow$ `M3` $\rightarrow$ `Ampla Concorrência (AC)`
 
    * `M4` e `M5` $\rightarrow$ `M6` $\rightarrow$ `Ampla Concorrência (AC)`
+  
+   * A vaga não preenchida na Modalidade `M7` - Não será destinada à ampla concorrência.
 
-5. **Tratamento de Gêmeos:** O algoritmo contempla regras específicas para alocação conjunta de candidatos sinalizados com `gemeo = 1`, inclusive em cenários limítrofes (últimas vagas disponíveis).
+6. **Tratamento de Gêmeos:** O algoritmo contempla regras específicas para alocação conjunta de candidatos sinalizados com `gemeo = 1`, inclusive em cenários limítrofes (últimas vagas disponíveis).
 
-6. **Listas de Espera Simultâneas:** Candidatos não contemplados nas vagas imediatas podem figurar simultaneamente tanto na lista de espera da **Ampla Concorrência** quanto na lista de espera de sua **modalidade específica**.
+7. **Listas de Espera Simultâneas:** Candidatos não contemplados nas vagas imediatas podem figurar simultaneamente tanto na lista de espera da **Ampla Concorrência** quanto na lista de espera de sua **modalidade específica**.
 
-7. **Exportação de Resultados:** Ao final, o painel técnico exibe a semente utilizada, o horário exato (UTC-03:00) e disponibiliza botões para download do **Relatório Oficial em PDF** (pronto para publicação) e da **Planilha Final em CSV** (para uso da secretaria).
+8. **Exportação de Resultados:** Ao final, o painel técnico exibe a semente utilizada, o horário exato (UTC-03:00) e disponibiliza botões para download do **Relatório Oficial em PDF** (pronto para publicação) e da **Planilha Final em CSV** (para uso da secretaria).
 
 ## 🚀 Como Executar
 
